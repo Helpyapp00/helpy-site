@@ -23,7 +23,7 @@
 
   <!-- Área principal com 3 colunas -->
   <main class="conteudo">
-    
+
     <!-- Categorias -->
     <aside class="categorias">
       <h2>encontre</h2>
@@ -58,6 +58,16 @@
     </aside>
 
   </main>
+
+  <!-- Popup de escolha Cliente ou Trabalhador -->
+<div id="popup" class="popup-escolha oculto">
+  <div class="popup-conteudo">
+    <h3>Você é:</h3>
+    <button onclick="filtrarFeed('cliente')">Cliente</button>
+    <button onclick="filtrarFeed('trabalhador')">Trabalhador</button>
+    <button onclick="filtrarFeed('todos')" style="background-color: gray;">Todos</button>
+  </div>
+</div>
 
 </body>
 </html>
