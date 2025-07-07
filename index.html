@@ -1,0 +1,63 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Helpy</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo-box">
+      <img src="assets/Perfil Helpy.jpg" alt="Logo Helpy">
+      <h1>Helpy</h1>
+    </div>
+    <input type="text" class="search" placeholder="🔍 pesquisar...">
+    <div class="notificacoes">
+      <button title="Notificações">🔔</button>
+    </div>
+  </header>
+
+  <!-- Área principal com 3 colunas -->
+  <main class="conteudo">
+    
+    <!-- Categorias -->
+    <aside class="categorias">
+      <h2>encontre</h2>
+      <ul id="lista-categorias">
+        <!-- Categorias preenchidas via JS -->
+      </ul>
+    </aside>
+
+    <!-- Feed de Publicações -->
+    <section class="feed">
+
+      <!-- Área de postagem -->
+      <div class="publicar">
+        <p>O que você está procurando?</p>
+        <div class="botoes-postar">
+          <button title="Foto">📷</button>
+          <button title="Vídeo">🎥</button>
+        </div>
+        <input type="text" placeholder="Sou cliente" class="input-feed">
+        <button class="btn-enviar">Publicar</button>
+      </div>
+
+      <!-- Lista de publicações -->
+      <div id="posts-container"></div>
+
+    </section>
+
+    <!-- Anúncio lateral -->
+    <aside class="anuncio">
+      <h3>Anúncio</h3>
+      <div class="caixa-anuncio">Espaço para publicidade</div>
+    </aside>
+
+  </main>
+
+</body>
+</html>
